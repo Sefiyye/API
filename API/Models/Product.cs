@@ -6,7 +6,8 @@ namespace API.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        [Column(TypeName="decimal(7,2")]
-        public decimal Price { get; set; }
+        public decimal SoldPrice { get; set; }
+        public decimal CostPrice { get; set; }
+        public bool DisplayStatus { get; set; }
     }
 }
